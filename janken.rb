@@ -1,6 +1,5 @@
 puts "じゃんけん...ポン！"
 
-
 def janken
   puts "0(グー)1(チョキ)2(パー)3(戦わない)"
   a = gets.to_i
@@ -16,15 +15,10 @@ jankens = ["グー", "チョキ", "パー"]
  puts "相　手：#{jankens[b]}を出しました"
  puts "--------------"
  
- 
  if a == b
 puts "あいこで...ショ！"
  return true
- 
- 
- 
- 
- 
+   
  elsif  (a == 0 && b == 1) || (a == 1 && b == 2) || (a == 2 && b == 0) 
    puts "あっちむいて〜"
    puts "0(上)1(下)2(左)3(右)"
@@ -44,8 +38,6 @@ puts "あいこで...ショ！"
     puts"残念！！" 
     return true
   end
- 
- 
  
  elsif  (a == 0 && b == 2) || (a == 1 && b == 0) || (a == 2 && b == 1) 
    puts "あっちむいて〜"
@@ -68,18 +60,10 @@ puts "あいこで...ショ！"
   end
  
  end
- 
- 
   
- 
- 
  end
  
  next_game = true
- 
  while next_game
   next_game = janken
-   
  end
- 
- 
